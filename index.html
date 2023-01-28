@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>To-do list</title>
+</head>
+<body class="bg-info bg-opacity-10">
+    <!-- Form Start -->
+    <div class="container py-3">
+        <label class="form-label mt-3" for="taskName" >Task Name : </label>
+        <input class="form-control mb-3" type="text" id="taskName">
+        <label class="form-label mb-3" for="taskDate">Task Date : </label>
+        <input class="form-control mb-3" type="date" id="taskDate">
+        <label class="form-label mb-3" for="taskStartingTime">Starting Time : </label>
+        <input class="form-control mb-3" type="time" id="taskStartingTime">
+        <label class="form-label mb-3" for="taskEndingTime">Ending Time : </label>
+        <input class="form-control mb-3" type="time" id="taskEndingTime">
+        <button onclick="addItem();" class="btn btn-primary d-block mt-4">Add Task</button>
+        
+    </div>
+    <!-- Form End -->
+    <!-- Table Start -->
+    <!-- On tables -->
+    <table class="table m-auto w-75">
+        <thead>
+          <tr>
+            <th scope="col">Task Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date</th>
+            <th scope="col">Starting Time</th>
+            <th scope="col">Ending Time</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          
+        </tbody>
+      </table>
+    <!-- Table End -->
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
